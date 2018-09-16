@@ -3,10 +3,12 @@ package linkedlist
 import (
 	"fmt"
 	"sync"
+
+	"github.com/cheekybits/genny/generic"
 )
 
 // Item to be stored in LinkedList
-type Item interface{}
+type Item generic.Type
 
 // Node of a LinkedList
 type Node struct {
