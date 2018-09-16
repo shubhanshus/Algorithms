@@ -1,9 +1,13 @@
 package stack
 
-import "sync"
+import (
+	"sync"
+
+	"github.com/cheekybits/genny/generic"
+)
 
 // Item the type of the stack
-type Item interface{}
+type Item generic.Type
 
 // Stack the stack of Items
 type Stack struct {
